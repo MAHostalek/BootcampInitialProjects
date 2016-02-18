@@ -1,0 +1,16 @@
+img{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	width:20%;
+	height: 40%;
+	margin:auto;
+	display: inline-block;
+}
+
+.imgs-holder{
+	text-align: center;
+	    height: 100%;
+}
+body{
+background-image:url('http://www.pulsarwallpapers.com/data/media/3/Alien%20Ink%202560X1600%20Abstract%20Background.jpg');
+}

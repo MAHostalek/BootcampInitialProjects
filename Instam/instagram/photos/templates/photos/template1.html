@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'photos/instagram.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'photos/style1.css' %}" />
+</head>
+<body>
+    <div class="menu">
+        <div class="insta-stripes">
+            <div class="insta-stripe-red"></div>
+            <div class="insta-stripe-yellow"></div>
+            <div class="insta-stripe-green"></div>
+            <div class="insta-stripe-blue"></div>
+        </div>
+
+        <div class="templates-btns">
+            <span>Watch your images in different styles:</span>
+            <div class="template-btn selected"><a href="/photos/{{ userId }}/template1" >Style 1</a></div>
+            <div class="template-btn "><a href="/photos/{{ userId }}/template2" >Style 2</a></div>
+            <div class="template-btn "><a href="/photos/{{ userId }}/template3" >Style 3</a></div>
+            <div class="template-btn "><a href="/photos/{{ userId }}/template4" >Style 4</a></div>
+            <div class="template-btn "><a href="/photos/{{ userId }}/template5" >Style 5</a></div>
+        </div>
+
+        <div class="go-back clickable"><a href="/photos" >BACK</a></div>
+        <div class="insta-viewfinder"></div>
+    </div>
+
+    <div class="imgs-holder">
+        {% for img in pics_list.data %}
+            <img src="{{ img.images.thumbnail.url }}">
+        {% endfor %}
+    </div>
+</body>
+</html>

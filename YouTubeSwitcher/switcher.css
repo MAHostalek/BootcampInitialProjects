@@ -1,0 +1,89 @@
+
+        body {
+            background-image: url('./images/wall.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Sigmar One', cursive;
+            color: white;
+            text-align: center;
+        }
+        h1{
+        	font-family: 'Sigmar One', cursive;
+            color: white;
+            text-align: left;
+        }
+        div{
+        	height: 427px;
+        	width:640px;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        .picture{
+			z-index: 0;
+			position: relative;
+        }
+
+        .gif{
+			z-index: -2;
+			position: relative;
+			width:425px;
+			height:330px;
+        	left:-46px;
+        	bottom:395px;
+        }
+
+        .video{
+        	z-index: -1;
+        	position: relative;
+			width:500px;
+			height:380px;
+        	left:-49px;
+        	bottom:750px;
+        }
+
+        .dresser{
+            z-index: 0;
+            position: relative;
+            left:-47px;
+            bottom:750px;
+            width:722px;
+            height:532px;
+        }
+        .uhr{
+            z-index: 0;
+            position: relative;
+            left:-595px;
+            bottom:2950px;
+        }
+        .schrank{
+            z-index: 0;
+            position: relative;
+            left:825px;
+            bottom:1839px;
+        }
+
+        input{
+        	z-index: 1;
+        	position: relative;
+        	left: 244px;
+        	bottom:-370px;
+        	background-color: black;
+        	color: white;
+        	text-align: right;
+        	border-radius: 5px;
+        }
+        p{
+        	z-index: 1;
+        	position: relative;
+        	left: 74px;
+        	bottom:-258px;
+        	background-color: rbga(0,0,0,0.9);
+        	font-size: 18px;
+        	color: green;
+        	text-align: left;
+        	border-radius: 5px;
+        }
+        
+    

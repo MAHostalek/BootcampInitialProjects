@@ -1,0 +1,27 @@
+img{
+
+	border:10px solid white;
+	margin:100px;
+	width:300px;
+	  animation: spin 10s linear infinite;
+	  animation-play-state: paused; 
+
+}
+body{
+background-image:url('http://www.pulsarwallpapers.com/data/media/3/Alien%20Ink%202560X1600%20Abstract%20Background.jpg');
+}
+
+img:hover{
+	animation-play-state: running;
+		-webkit-filter: none;
+	filter: none;
+}
+
+@keyframes spin {
+  100% {transform: rotate(20turn); }
+}
+
+.imgs-holder{
+	text-align:center;
+	    height: 100%;
+}

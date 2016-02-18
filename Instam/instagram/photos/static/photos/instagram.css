@@ -1,0 +1,158 @@
+body{
+	background-color:#E3DCC9;
+	padding: 0px;
+	margin:0px;
+}
+
+.clickable{
+	cursor:pointer;
+}
+
+.menu{
+	background-color:#7C5641;
+	width:100%;
+	height:150px;
+	border-top-left-radius: 75px;
+	border-top-right-radius: 75px;
+}
+
+.insta-stripes{
+	margin-left:150px;
+	font-size:0px;
+	display:inline-block;
+}
+
+.menu .insta-stripe{
+	width:50px;
+	height:100%;
+	display:inline-block;
+}
+
+.insta-stripe-red{
+	width:30px;
+	height:150px;
+	background-color:#EB1111;
+	display: inline-block;
+}
+
+.insta-stripe-yellow{
+	width:30px;
+	height:150px;
+	background-color:#EBE311;
+	display: inline-block;
+}
+
+.insta-stripe-green{
+	width:30px;
+	height:150px;
+	background-color:#45DA5E;
+	display: inline-block;
+}
+
+.insta-stripe-blue{
+	width:30px;
+	height:150px;
+	background-color:#181DA8;
+	display: inline-block;
+}
+
+.menu .insta-viewfinder{
+	z-index:-1;
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    display: inline-block;
+    border-radius: 10px;
+    position: absolute;
+    right: 100px;
+    top: 25px;
+}
+
+.menu form{
+    display: inline-block;
+    font-family: 'Lobster';
+    vertical-align: top;
+    margin-top: 60px;
+    margin-left:30px;
+    font-size: 30px;
+}
+
+.menu form input{
+	background-color:#E3DCC9;
+	font-size:30px;
+	outline:none;
+	color:#666;
+}
+
+.menu form .error{
+	color:#E93E54;
+	font-size: 25px;
+}
+
+.menu form input.submit-btn{
+	font-family: 'Lobster';
+    background-color: #7DC99A;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.main-text{
+	font-size: 160px;
+	text-align:center;
+	color:black;
+	font-family:'Fredoka One';
+	top:50%;
+/*	transform:translateY(-50%);*/
+	position:relative;
+}
+
+
+.menu .templates-btns{
+	display:inline-block;
+	vertical-align:top;
+	font-family: 'Lobster';
+    font-size: 30px;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+
+.menu .template-btn{
+	display:inline-block;
+    background-color: #7DC99A;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+
+.menu .template-btn.selected a{
+	color: #FAD43B;
+}
+
+.menu .template-btn a{
+	text-decoration: none;
+	 color: black;
+}
+
+.menu .go-back{
+	display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 115px;
+    top: 100px;
+    font-family: Lobster;
+    z-index: 123;
+    font-size: 30px;
+}
+
+.menu .go-back a{
+ color: white;
+ text-decoration: none;
+}

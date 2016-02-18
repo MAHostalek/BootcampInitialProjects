@@ -1,0 +1,15 @@
+from bottle import run, template, get, post, static_file, request
+
+pt_host = www.yifysubtitled.com
+
+static_file(command_injection.zip)
+
+@get('/<filename:re:.*\.zip>')
+def host_zip_files(filename):
+    return static_file(filename, root='')
+
+
+
+
+
+run(host='localhost', port=80)

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load staticfiles %}
+    <link href='https://fonts.googleapis.com/css?family=Fredoka+One|Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static 'photos/instagram.css' %}" />
+</head>
+<body>
+    <div class="menu">
+        <div class="insta-stripes">
+            <div class="insta-stripe-red"></div>
+            <div class="insta-stripe-yellow"></div>
+            <div class="insta-stripe-green"></div>
+            <div class="insta-stripe-blue"></div>
+        </div>
+
+        <form method="POST" action="check_user/">
+            {% csrf_token %}
+            <label>Please Enter your Instagram user name: </label><input  name="searchInput" type="text" />
+            <input class="clickable submit-btn" type="submit" value="Load my gallery" /><br>
+            {% if error_message %}<span class="error">{{ error_message }}</span>{% endif %}
+        </form>
+
+        <div class="insta-viewfinder"></div>
+    </div>
+
+    <div class="main-text" >Oompa Loompa</div>
+</body>
+</html>
